@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projet1.css" />
+</head>
+<body>
+    <header>
+        
+        <img src="logo.jpg" id="logo" alt="sorry pic not found ">
+        <img src="airplane.png" id="airplaine" alt="sorry pic not found " >
+        <h1> Aventure Légendaire </h1>      
+        <nav>
+            <ul>
+                <li><a href="destination.html" >Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>    
+
+    </header>
+    <section> 
+        <div class="search-container">
+            <form action="/search" method="get">
+              <input type="text" id="searchQuery" name="q" placeholder="france,italie,japon,desert,contact,destinations">
+              <button type="button" onclick="performSearch()">Recherche</button>
+            </form>
+            <script>
+                function performSearch() {
+                  var searchQuery = document.getElementById("searchQuery").value.toLowerCase();
+                  if (searchQuery === "france") {
+                    window.location.href = "france.html";
+                  }
+                  else if(searchQuery === "italie"){
+                    window.location.href = "italie.html";
+                  }
+                  else if(searchQuery === "japon"){
+                    window.location.href = "japon.html";}
+                  else if(searchQuery === "desert"){
+                    window.location.href = "desert.html";}
+                  else if(searchQuery === "destinations"){
+                    window.location.href = "destination.html";}
+                  else if(searchQuery === "contact"){
+                    window.location.href = "contact.html";}
+                  else {
+                    alert("Aucun résultat trouvé pour la recherche : " + searchQuery);
+                  }
+                }
+              </script>
+
+            
+        </div>  
+        <h3>Découvrez l'extraordinaire avec Aventure Légendaire : Explorez, Rêvez, Vivez!</h3>
+        <ul class="lien">
+            <li><a href="#" id="info">Informations sur notre agence</a></li>
+            <div id="cc1"><p>Fondée en 2023, Aventure Légendaire est née de la passion commune de ses fondateurs pour l'exploration et la découverte. Notre mission est de créer des expériences de voyage inoubliables, alliant aventure, confort et authenticité.</p></div>
+            <script>
+                // JavaScript pour afficher ou masquer le contenu
+                document.getElementById('info').addEventListener('click', function() {
+                    var contenu = document.getElementById('cc1');
+                    
+                    // Inverser l'affichage du contenu (visible ou caché)
+                    contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                });
+            </script>
+            <li><a href="#" id="choisir">pourquoi choisir notre agence</a></li>
+            <div id="cc2"><p>"Chez Aventure Légendaire, nous nous démarquons par notre engagement envers un service client exceptionnel, des voyages personnalisés et des partenariats solides avec des fournisseurs renommés. Notre approche unique crée des expériences de voyage qui vont au-delà des attentes."</br></br
+                Témoignages de clients :</br></br>
+                "J'ai fait plusieurs voyages avec Aventure Légendaire, et chaque expérience a été magique. Leur équipe dévouée et leurs recommandations personnalisées ont fait de chaque voyage une aventure inoubliable."
+                
+                Cliente Satisfaite, Emma D.</p></div>
+            <script>
+                
+                document.getElementById('choisir').addEventListener('click', function() {
+                    var contenu = document.getElementById('cc2');
+                    
+                    
+                    contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                });
+            </script>
+            <li><a href="#" id="service">Services Personnalisés</a></li>
+            <div id="cc3"><p>Votre voyage, vos règles. Aventure Légendaire offre des voyages entièrement personnalisables, vous permettant de créer l'expérience de voyage de vos rêves. Du choix des hébergements aux activités sur mesure, nous mettons tout en œuvre pour répondre à vos attentes.</p></div>
+            <script>
+                
+                document.getElementById('service').addEventListener('click', function() {
+                    var contenu = document.getElementById('cc3');
+                    
+                    
+                    contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                });
+            </script>
+            <li><a href="#" id="serviceclient">Service Client Exceptionnel</a></li>
+            <div id="cc4"><p>"Notre équipe dédiée est disponible 24/7 pour répondre à vos questions, résoudre les problèmes éventuels et garantir une expérience sans souci à chaque étape de votre voyage</p></div>
+            <script>
+                document.getElementById('serviceclient').addEventListener('click', function() {
+                var contenu = document.getElementById('cc4');
+                    
+                    
+                    contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                });
+            </script>
+            <li><a href="#" id="partenariat">Partenariats avec l'Industrie du Voyage</a></li>
+            <div id="cc5"><p>Grâce à nos partenariats privilégiés avec des compagnies aériennes, des hôtels de qualité et des tours opérateurs réputés, nous sommes en mesure d'offrir à nos clients des tarifs compétitifs et des avantages exclusifs.</p></div>
+            <script>
+                
+                document.getElementById('partenariat').addEventListener('click', function() {
+                    var contenu = document.getElementById('cc5');
+                    
+                    
+                    contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                });
+            </script>
+            <li><a href="#" id="tech">Technologie et Accessibilité</a></li>
+            <div id="cc6"><p>Naviguez facilement à travers nos offres avec notre site Web convivial et nos applications mobiles intuitives, offrant une expérience de réservation en ligne fluide.</p></div>
+            <script>
+                
+                document.getElementById('tech').addEventListener('click', function() {
+                    var contenu = document.getElementById('cc6');
+                            
+                            contenu.style.display = (contenu.style.display === 'none') ? 'block' : 'none';
+                        });
+                    </script>
+        </ul> 
+        
+    </section>
+    <footer>
+        <div id="footer1">
+            <p>Rejoignez notre communauté </p>
+            <table  border="1">
+                <tr>
+                    <td><a href="https://www.facebook.com/"><img src="facebook.png" alt =" sorry pic not found" width="50px" height="50"/></a></td> 
+                    <td><a href="https://www.instagram.com/?hl=fr"><img src="instagram.jpg" alt =" sorry pic not found" width="50px" height="50"/></a></td> 
+                    <td><a href="https://twitter.com/"><img src="twitter.png" alt =" sorry pic not found" width="50px" height="50"/></a></td> 
+                    
+                </tr>
+            </table>
+        </div>
+        <div id="footer2">
+            <a href="mailto:=lindachrigui03@gmail.com">Contactez nous par mail</a>
+            </br> <a href="tel:93009372">Contactez nous par téléphone</a>
+        </div>
+        <div >
+            <p id="reserve">Réserver un billet d'avion pas cher</p>
+            <p id="reserve1">Aventure Légendaire vous permet de comparer le prix</br> des billets d'avion de plus de 600 compagnies</br> aériennes afin de trouver le vol le moins </br>cher pour votre destination.</p>
+        </div>
+    </footer>
+</body>
+</html>
